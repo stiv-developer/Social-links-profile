@@ -1,0 +1,101 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    background: var(--Grey-900);
+    color: var(--White);
+}
+
+.container{
+    padding: 60px 20px;
+}
+
+.card{
+    /* border: 1px solid red; */
+    padding: 20px 20px;
+    text-align: center;
+    background: var(--Grey-800);
+    border-radius: 12px;
+}
+
+.card .card-header{
+    /* border: 1px solid green; */
+}
+
+.card .card-header img{
+    /* border: 1px solid green; */
+    width: 100px;
+    border-radius: 50%;
+}
+
+.card .card-header h2{
+    /* border: 1px solid green; */
+    margin-bottom: 5px;
+}
+
+.card .card-header p{
+    margin-top: 0;
+    /* border: 1px solid green; */
+    color: var(--Green);
+    font-weight: 500;
+}
+
+.card .card-body{
+
+}
+.card .card-body p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.card .card-body .group-links{
+
+}
+
+.card .card-body .group-links ul{
+    padding: 0;
+}
+
+.card .card-body .group-links ul li{
+    list-style: none;
+    background: var(--Grey-700);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.card .card-body .group-links ul li:hover{
+    background: var(--Green);
+    transition: 0.2s;
+    color: var(--Grey-900);
+    cursor: pointer;
+}
+
+.card .card-body .group-links ul li a{
+    color: var(--White);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card .card-body .group-links ul li:hover a{
+    color: var(--Grey-900);
+}
+
+@media only screen and (min-width: 600px) {
+    .container{
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
